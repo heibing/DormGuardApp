@@ -36,7 +36,7 @@ public class MainFragment extends Fragment implements CompoundButton.OnCheckedCh
         View rootView = inflater.inflate(R.layout.fragment_main, container, false);
 
         t = (ToggleButton) rootView.findViewById(R.id.toggleButton);
-        r = (RelativeLayout) rootView.findViewById(R.id.layout);
+        r = (RelativeLayout) rootView.findViewById(R.id.fragment1);
 
         t.setOnCheckedChangeListener(this);
 
@@ -48,11 +48,11 @@ public class MainFragment extends Fragment implements CompoundButton.OnCheckedCh
     public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
         if(b)
         {
-            r.setBackgroundColor(Color.RED);
+            t.setBackgroundColor(Color.RED);
         }
         else
         {
-            r.setBackgroundColor(Color.GREEN);
+            t.setBackgroundColor(Color.GREEN);
         }
     }
 }

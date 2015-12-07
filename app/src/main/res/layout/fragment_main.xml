@@ -11,14 +11,12 @@
     tools:context="ludvig.chef.togglebutton3.MainActivity">
 
 
-
     <ToggleButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textOff="Activate System"
         android:textOn="Deactivate System"
         android:id="@+id/toggleButton"
-
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
 </RelativeLayout>
